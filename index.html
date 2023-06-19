@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <!-- defines root of HTML-->
+  <head>
+    <!--this is the head of the page-->
+    <title>Rock Paper Scissors Game</title>
+    <!-- title of the HTML document (the tab)-->
+    <link rel="stylesheet" href="style.css">
+    <!--links to an external resource. Href is the link. in this case the stylesht from the style.css page in the file -->
+  </head>
+  <!-- closes head-->
+  
+    <!--contains visible content of the HTML document-->
+    <h1>Rock Paper Scissors Game</h1>
+    <!--define headings of different sizes and importance. h1 being the biggest and most important-->
+    <label for="username"> username:</label>
+    <!--label defines a label for an input element (this case the username input)-->
+    <!--for attribute works in conjuction with label to associate label with an input element.-->
+    <input type="text" id="username">
+    <!--input defines an input field where the user can enter data. type defines the type of input field.-->
+    <form id="username"></form>
+    <!--created a form element for user input-->
+    <input type="submit" id="username-submit">
+    <!--this input is creating a submit button to show on the HTML.-->
+    <div class="game-container">
+        <!--div defines a section of a webpage-->
+      <div class="player-container">
+        <!--the class is a gup of something-->
+        <h2 class="user"> </h2>
+        <button class="player-choice" id="rock"  disabled> <img src="rock-paper-scissors/images/theRock.png"></button>
+        <button class="player-choice" id="paper" disabled><img src="rock-paper-scissors/images/paper.png"></button>
+        <button class="player-choice" id="scissors" disabled><img src="rock-paper-scissors/images/scissors.png"></button>
+      </div>
+      <div class="result-container">
+        <h2>Result</h2>
+        <p id="result"></p>
+        <!--p is for a pragraph. ID selects only one thing opposed to a class-->
+      </div>
+      <div class="computer-container">
+        <h2>Computer</h2>
+        <p id="computer-choice"></p>
+      </div>
+      <div class="rounds-container">
+        <h2>Rounds</h2>
+        <p id="round">0</p>
+      </div>
+      <div class="wins-container">
+        <h2>Wins</h2>
+        <p id="wins">0</p>
+      </div>
+      <div class="losses-container">
+        <h2>Losses</h2>
+        <p id="losses">0</p>
+      </div>
+      <div class="draws-container">
+        <h2>Draws</h2>
+        <p id="draws">0</p>
+      </div>
+      <button id="reset">Reset</button>
+    </div>
+    <script src="main.js"></script>
+    <!--defines a section for JS code-->
+  </body>
+</html>
+
